@@ -1,0 +1,137 @@
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #a49fa0, #fefefd);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.container-one{
+    display: grid;
+    justify-content: center;
+
+
+}
+.photo{
+    border-radius: 50%;
+}
+.image{
+    margin-top: 20px;
+}
+.name{
+    font-family: "Noto Serif", serif;
+    margin-bottom: 30px;
+}
+.h2{
+    font-family: "Handlee", cursive;
+}
+.container-three{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 30px;
+}
+.Hewlett-Packard, .DHL, .Intertek, .Vialtis{
+    border:10px solid #a49fa0;
+    margin-right:30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.container-two, .container-four{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Handlee", cursive;
+    font-size: 18pt;
+}
+.duties{
+    font-family: "Handlee", cursive;
+}
+.Hewlett-Packard-title, .DHL-title, .Intertek-title, .Vialtis-title{
+    font-family: "Noto Serif", serif;
+    font-size: 14pt;
+}
+.Hewlett-Packard-duties, .DHL-duties, .Intertek-duties, .Vialtis-duties{
+    font-family: "Handlee", cursive;  
+}
+
+.container-five{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 30px;
+    background-color: #a49fa0;
+    
+}
+
+.tindog, .mondrian, .coming-soon{
+    margin-top: 50px;
+    border-bottom:solid white ;
+    border:solid white;
+    margin-bottom: 50px;
+    width:500px;
+}
+.tindog-text, .mondrian-text, .coming-soon-text{
+ text-align: center;
+ }
+ .tindog-text > h3{
+    font-family: "Noto Serif", serif;
+    font-size: 14pt;
+ }
+ .tindog-text > p{
+    font-family: "Handlee", cursive; 
+    font-size: 14pt;
+ }
+ .mondrian-text>h3{
+    font-family: "Noto Serif", serif;
+    font-size: 14pt;
+ }
+ .mondrian-text>p{
+    font-family: "Handlee", cursive; 
+    font-size: 14pt;
+ }
+ .mondrian-image{
+    width: 500px;
+ }
+ .mondrian-image>a>img{
+    width: 500px;
+ }
+ .coming-soon > img{
+    width: 500px;
+ }
+ .coming-soon > h3{
+    font-family: "Noto Serif", serif;
+    font-size: 14pt;
+ }
+
+.contact{
+    text-align: center;
+    font-family: "Handlee", cursive; 
+    font-size: 14pt;
+}
+@media (max-width:1200px){
+    .container-three, .container-five{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        flex-basis:100px;
+        flex-shrink: 1;
+    }
+  
+}
+
+
+
