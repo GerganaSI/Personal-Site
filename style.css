@@ -57,12 +57,15 @@
 .duties{
     font-family: "Handlee", cursive;
 }
-.Hewlett-Packard-title, .DHL-title, .Intertek-title, .Vialtis-title{
+.Hewlett-Packard-title>h2, .DHL-title>h2, .Intertek-title>h2, .Vialtis-title>h2{
     font-family: "Noto Serif", serif;
-    font-size: 14pt;
+    font-size: 18pt;
+ 
+  
 }
 .Hewlett-Packard-duties, .DHL-duties, .Intertek-duties, .Vialtis-duties{
     font-family: "Handlee", cursive;  
+    font-size: 14pt;
 }
 
 .container-five{
@@ -73,6 +76,7 @@
     align-content: center;
     margin-top: 30px;
     background-color: #a49fa0;
+    gap:30px;
     
 }
 
@@ -81,7 +85,7 @@
     border-bottom:solid white ;
     border:solid white;
     margin-bottom: 50px;
-    width:500px;
+    
 }
 .tindog-text, .mondrian-text, .coming-soon-text{
  text-align: center;
@@ -102,16 +106,17 @@
     font-family: "Handlee", cursive; 
     font-size: 14pt;
  }
- .mondrian-image{
-    width: 500px;
- }
+ 
  .mondrian-image>a>img{
-    width: 500px;
+    width:495px;
  }
  .coming-soon > img{
     width: 500px;
  }
- .coming-soon > h3{
+ .coming-soon{
+    width: 500px;
+ }
+ .coming-soon-text > h3{
     font-family: "Noto Serif", serif;
     font-size: 14pt;
  }
@@ -121,8 +126,35 @@
     font-family: "Handlee", cursive; 
     font-size: 14pt;
 }
+.container-seven{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+}
+.hobbies{
+    grid-column-start: 2;
+}
+.skills, .languages, .hobbies{
+    border:10px solid #a49fa0;
+    margin-right:30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.skills{
+    grid-row: span 2;
+}
+.skills-title>h2, .languages-title>h2, .hobbies-title>h2{
+    font-family: "Noto Serif", serif;
+    font-size: 18pt;
+ 
+}
+.languages-text, .hobbies-text, .skills-text{
+    font-family: "Handlee", cursive;  
+    font-size: 14pt; 
+}
 @media (max-width:1200px){
-    .container-three, .container-five{
+    .container-three, .container-five, .container-seven{
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -132,6 +164,7 @@
     }
   
 }
+
 
 
 
